@@ -1,0 +1,197 @@
+/* GOOGLEFONT */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Space+Grotesk:wght@400;700&display=swap');
+/* ROOT */
+:root {
+  --titre-h1: 'Rajdhani', sans-serif;
+  --boutons: 'Rajdhani', sans-serif;
+  --titre-h2: 'Space Grotesk', sans-serif;
+  --sous-titre: 'Space Grotesk', sans-serif;
+}
+/* CSSRESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background: #000;
+  line-height: 40px;
+}
+
+/* HEADER */
+header {
+  background-image: url(/Assets/Illustrations/Game/Batgame1.png);
+}
+/* NAVBAR  */
+nav {
+  margin:0 7%;
+  padding: 3% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid rgba(255, 255, 255, 0.247);
+  border-top: none;
+}
+.menus {
+  display: flex;
+  align-items: center;
+  width: 18%;
+}
+.menus a {
+  font-family: var(--boutons);
+  font-size: 28px;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+}
+.menus a:hover {
+  text-decoration: underline;
+}
+/* INTRO */
+.intro {
+  height: 100vh;
+  /* background: red; */
+  margin-left: 7%;
+  margin-right: 7%;
+  border: 3px solid rgba(255, 255, 255, 0.247);
+  border-bottom: none;
+
+  position: relative;
+}
+.intro-content {
+  width: 60%;
+  text-align: start;
+  padding-left: 15px;
+  position: absolute;
+  top: 25%;
+  left: 0;
+}
+/* SIDE */
+.side {
+  position: absolute;
+  right: -55px;
+  top: 47%;
+}
+.side img {
+  display: block;
+}
+.icon-social {
+  width: 40px;
+}
+.icon-social img {
+  margin: 25px 37px 12px;
+}
+
+h1 {
+  font-family: var(--titre-h1);
+  font-size: 46px;
+  text-transform: uppercase;
+  line-height: 48px;
+}
+#quiz-1 h1,
+#quiz-2 h1 {
+  font-size: 35px;
+}
+p {
+  font-family: var(--sous-titre);
+  font-size: 22px;
+}
+
+button {
+  color: white;
+  font-size: 20px;
+  font-family: var(--boutons);
+  text-transform: uppercase;
+  padding: 0.6em 1em;
+  margin: 0 15px;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgb(177, 51, 19)
+  );
+  border: none;
+  cursor: pointer;
+}
+button>a {
+  color: white;
+  font-size: 20px;
+  font-family: var(--boutons);
+  text-decoration: none;
+  padding: 0.6em 1em;
+}
+
+/* main */
+.fleche-icon {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5%;
+  margin-bottom: 13%;
+}
+/* niveau 1 */
+#quiz-1 {
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-left: 5%;
+  border: 3px solid rgba(255, 255, 255, 0.247);
+  border-bottom: none;
+  border-top: none;
+}
+
+.one p:first-child {
+  margin-top: 7%;
+  margin-bottom: 4%;
+}
+.one p:nth-child(2),
+.one p:nth-child(3),
+.one p:nth-child(4) {
+  padding: 0.8em 0.2em;
+  margin-bottom: 0.5em;
+  background: #c4c4c4;
+  width: 50%;
+}
+
+/* quiz 2 */
+#quiz-2 {
+  padding-top: 13%;
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-left: 5%;
+}
+#quiz-2 h1 {
+  text-align: center;
+}
+#quiz-2 div {
+  margin: 3% 8%;
+}
+#quiz-2 button {
+  margin-left: 42%;
+  margin-bottom: 11%;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding-bottom: 5%;
+}
+.inline {
+  display: inline;
+  font-size: 12px;
+}
+.parentLogo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 1.5em;
+}
+.sayna-icone {
+  display: flex;
+  text-align: center;
+}
+.sayna-icone a {
+  padding: 0 10px;
+}
